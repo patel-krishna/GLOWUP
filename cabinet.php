@@ -17,7 +17,7 @@
 </div>
 
 <div class = "add-product">
-    <a href="addproduct.html" class="add-button" target="_blank">Add Product</a>
+    <a href="addproduct.php" class="add-button" target="_blank">Add Product</a>
 </div>
 
 <div class = "cabinet">
