@@ -8,14 +8,14 @@
     </head>
 <body>
 
-  <div class="header">
-    <a href="#default" class="logo">GlowUp</a>
-    <div class="header-right">
-    <a class="active" href="#home">Home</a>
-    <a href="cabinet.php">Cabinet</a>
-    <a href="#about">About</a>
-    </div>
-</div>
+<div class="header">
+            <a href="home.html" class="logo">GlowUp</a>
+            <div class="header-right">
+            <a class="active" href="home.html">Home</a>
+            <a href="cabinet.php">Cabinet</a>
+            <a href="#about">About</a>
+            </div>
+        </div>
 
 <div class="add-form">
     <form action="add_product.php" method="POST">
