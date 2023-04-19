@@ -9,14 +9,13 @@
     </head>
 <body>
 
-<div class="header">
-            <a href="home.html" class="logo">GlowUp</a>
-            <div class="header-right">
-            <a class="active" href="home.html">Home</a>
-            <a href="cabinet.php">Cabinet</a>
-            <a href="#about">About</a>
-            </div>
-        </div>
+
+    <div class="sidebar">
+    <a href="home.html" class="logo">GlowUp</a>
+        <a class="active" href="cabinet.php">Your Cabinet</a>
+        <a href="#">Your Friends</a>
+        <a href="#">Surveys</a>
+    </div>
 
 <div class = "recommend-quiz">
     <a href="recommendationquiz.html" class="quiz-button" target="_blank">Take Our Quiz</a>

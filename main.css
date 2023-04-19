@@ -1,3 +1,9 @@
+body{
+  background-color:#F2F4F8;
+  font-family: 'Lexend', sans-serif;
+  
+}
+
 h1 {
     font-family: 'Lexend', sans-serif;
 }
@@ -6,33 +12,98 @@ h1 {
     text-align: center;
 }
 
-.recommend-quiz{
-    float: right;
-    
+/* HOMEPAGE */
+
+.title-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
-.quiz-button {
-    background-color: #beece2;
-    color: white;
-    border-radius: 10px;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
+
+.title-container {
+  max-width: 50%;
+  padding: 30px;
 }
-.add-product {
-    padding: 15px 10px 15px 10px;
+
+.title-img {
+  
+  flex: 1;
+  text-align: center;
 }
-.add-button {
-    background-color: #2c1aed;
-    border: none;
-    border-radius: 10px ;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 10px;
-    cursor: pointer;
+
+.button-container {
+  justify-content: flex-start;
+}
+
+.button-container button {
+  margin-right: 10px;
+}
+
+/* CABINET */
+
+/* The side navigation menu */
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: white;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.cabinet {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
   }
+  .sidebar a {float: left;}
+  div.cabinet {margin-left: 0;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
 #grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -108,39 +179,6 @@ h1 {
 
   /* TITLE OF LANDING PAGE */
 
-.container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    text-align: center;
-}
-
-.typewriter h1 {
-    display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-        text-align: center;
-    color: #fff;
-
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
-    animation: 
-      typing 2.5s steps(30, end),
-      blink-caret .5s step-end infinite;
-  }
-  
-  /* The typing effect */
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-  
-  /* The typewriter cursor effect */
 
 
   /* MAIN BUTTON */
