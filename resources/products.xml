@@ -1,81 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <cabinet>
-  <next>8</next>
-  <!-- First shelf -->
-  <cleanser_oils>
-    <product>
-      <id>1</id>
-      <name>Cleanser 1</name>
-      <brand>Brand 1</brand>
-      <quantity>100ml</quantity>
-      <category>cleanser or oils</category>
-      <target>acne</target>
-      <image>#</image>
-    </product>
-    <product>
-      <id>5</id>
-      <name>a</name>
-      <brand>aa</brand>
-      <quantity>2</quantity>
-      <category>Cleansers</category>
-      <target>Acne</target>
-      <image>#</image>
-    </product>
-    <product>
-      <id>7</id>
-      <name>a</name>
-      <brand>aa</brand>
-      <quantity>2</quantity>
-      <category>Cleansers</category>
-      <target>Acne</target>
-      <image>#</image>
-    </product>
-  </cleanser_oils>
-  <!-- Second shelf -->
-  <treatments>
-    <product>
-      <id>2</id>
-      <name>essence 1</name>
-      <brand>Brand 1</brand>
-      <quantity>100ml</quantity>
-      <category>treatments</category>
-      <target>acne</target>
-      <image>#</image>
-    </product>
-  </treatments>
-  <!-- Third shelf -->
-  <moisture>
-    <product>
-      <id>3</id>
-      <name>essence 1</name>
-      <brand>Brand 1</brand>
-      <quantity>100ml</quantity>
-      <category>moisture</category>
-      <target>acne</target>
-      <image>#</image>
-    </product>
-    <product>
-      <id>6</id>
-      <name>test</name>
-      <brand>brand 2</brand>
-      <quantity>5</quantity>
-      <category>Moisture and Creams</category>
-      <target>Dryness</target>
-      <image>#</image>
-    </product>
-  </moisture>
-  <!-- Fourth Shelf -->
-  <makeup>
-    <product>
-      <id>4</id>
-      <name>palette 1</name>
-      <brand>Brand 1</brand>
-      <quantity>100ml</quantity>
-      <category>treatments</category>
-      <target>makeup</target>
-      <image>#</image>
-    </product>
-  </makeup>
+  <next>6</next>
+  <product>
+    <id>1</id>
+    <name>BHA</name>
+    <brand>The Ordinary</brand>
+    <category>Skincare</category>
+    <type>Exfoliator</type>
+    <date>2023-04-04</date>
+    <image>resources/images/exfoliator.png</image>
+  </product>
+  <product>
+    <id>2</id>
+    <name>Soft Pinch Liquid Blush</name>
+    <brand>Rare Beauty</brand>
+    <category>Makeup</category>
+    <type>Blush</type>
+    <date>2023-01-25</date>
+    <image>resources/images/blush.png</image>
+  </product>
+  <product>
+    <id>3</id>
+    <name>Hoola Bronzer</name>
+    <brand>Benefit Cosmetics</brand>
+    <category>Makeup</category>
+    <type>Powder</type>
+    <date>2023-04-10</date>
+    <image>resources/images/powder.png</image>
+  </product>
+  <product>
+    <id>4</id>
+    <name>Rice Wash Skin-Soften Cleanser</name>
+    <brand>Tacha</brand>
+    <category>Skincare</category>
+    <type>Cleanser</type>
+    <date>2023-03-08</date>
+    <image>resources/images/cleanser.png</image>
+  </product>
+  <product>
+    <id>5</id>
+    <name>Killawatt Freestyle</name>
+    <brand>Fenty Beauty</brand>
+    <category>Makeup</category>
+    <type>Highlighter</type>
+    <date>2023-03-15</date>
+    <image>resources/images/highlighter.png</image>
+  </product>
 </cabinet>
 <!-- Product template -->
 <!-- <product>

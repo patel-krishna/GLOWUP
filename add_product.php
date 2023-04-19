@@ -10,10 +10,11 @@ if(isset($_POST['submit']))
     $id = $xml -> getElementsByTagName("next")->item(0)->textContent; 
     $name = $_POST['prodname'];
     $brand = $_POST['prodbrand'];
-    $quantity = $_POST['prodqty'];
+    $type = $_POST['prodtype'];
     $category = $_POST['prodcategory'];
-    $target = $_POST['prodtarget'];
-    $shelf = null;
+    $date = $_POST['datePurchased'];
+    $image = null; 
+    // $shelf = null;
 
     // if($category == "Cleansers"){
     //     $shelf = $xml->getElementsByTagName("cleanser_oils")->item(0);
@@ -28,24 +29,84 @@ if(isset($_POST['submit']))
     //     echo "shelf is null";
     // }
 
-    switch ($category) {
-        case "Cleansers":
-            $shelf = $xml->getElementsByTagName("cleanser_oils")->item(0);
+    // switch ($category) {
+    //     case "Cleansers":
+    //         $shelf = $xml->getElementsByTagName("cleanser_oils")->item(0);
+    //         break;
+    //     case "Treatments":
+    //         $shelf = $xml->getElementsByTagName("treatments")->item(0);
+    //         break;
+    //     case "Moisture and Creams":
+    //         $shelf = $xml->getElementsByTagName("moisture")->item(0);
+    //         break;
+    //     case "Makeup":
+    //         $shelf = $xml->getElementsByTagName("makeup")->item(0);
+    //         break;
+    //     default:
+    //         echo "Invalid category: " . $category;
+    //         break;
+    // }
+    
+
+    // images
+    switch($type){
+        case 'Cleanser':
+            $image = "resources/images/cleanser.png";
             break;
-        case "Treatments":
-            $shelf = $xml->getElementsByTagName("treatments")->item(0);
+        case 'Toner':
+            $image = "resources/images/toner.png";
             break;
-        case "Moisture and Creams":
-            $shelf = $xml->getElementsByTagName("moisture")->item(0);
+        case 'Serum':
+            $image = "resources/images/serum.png";
             break;
-        case "Makeup":
-            $shelf = $xml->getElementsByTagName("makeup")->item(0);
+        case 'Moisturizer':
+            $image = "resources/images/moisturizer.png";
             break;
-        default:
-            echo "Invalid category: " . $category;
+        case 'Eye Cream':
+            $image = "resources/images/eyecream.png";
+            break;
+        case 'Sunscreen':
+            $image = "resources/images/sunscreen.png";
+            break;
+        case 'Face Oil':
+            $image = "resources/images/faceoil.png";
+            break;
+        case 'Exfoliator':
+            $image = "resources/images/exfoliator.png";
+            break;
+        case 'Mask':
+            $image = "resources/images/mask.png";
+            break;
+        case 'Lip Mask':
+            $image = "resources/images/lipmask.png";
+            break;
+        case 'Foundation':
+            $image = "resources/images/foundation.png";
+            break;
+        case 'Concealer':
+            $image = "resources/images/concealer.png";
+            break;
+        case 'Powder':
+            $image = "resources/images/powder.png";
+            break;
+        case 'Blush':
+            $image = "resources/images/blush.png";
+            break;
+        case 'Highlighter':
+            $image = "resources/images/highlighter.png";
+            break;
+        case 'Eyeshadow':
+            $image = "resources/images/eyeshadow.png";
+            break;
+        case 'Mascara':
+            $image = "resources/images/mascara.png";
+            break;
+        case 'Lipstick':
+            $image = "resources/images/lipstick.png";
             break;
     }
-    
+
+
     //increment next product ID
     $xml->getElementsByTagName("next")->item(0)->textContent = $id + 1;
 
@@ -54,22 +115,25 @@ if(isset($_POST['submit']))
     $add_id = $xml->createElement("id",$id);
     $add_name = $xml->createElement("name",$name);
     $add_brand = $xml->createElement("brand",$brand);
-    $add_quantity = $xml->createElement("quantity",$quantity);
     $add_category = $xml->createElement("category",$category);
-    $add_target = $xml->createElement('target', $target);
-    $add_image = $xml->createElement('image', '#');
+    $add_type = $xml->createElement("type",$type);
+    $add_date = $xml->createElement('date', $date);
+    $add_image = $xml->createElement('image', $image);
 
     // Append the child elements to the <product> element
     $product->appendChild($add_id);
     $product->appendChild($add_name);
     $product->appendChild($add_brand);
-    $product->appendChild($add_quantity);
     $product->appendChild($add_category);
-    $product->appendChild($add_target);
+    $product->appendChild($add_type);
+    $product->appendChild($add_date);
     $product->appendChild($add_image);
     
     // Append the new product to the shelf
-    $shelf->appendChild($product);
+    //$shelf->appendChild($product);
+
+    $cabinet = $xml->getElementsByTagName('cabinet')->item(0);
+    $cabinet->appendChild($product);
 
     // Save the changes to the XML file
     $xml->save("resources/products.xml") or die("Error, unable to create xml file.");

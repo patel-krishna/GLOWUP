@@ -1,7 +1,7 @@
 body{
   background-color:#F2F4F8;
   font-family: 'Lexend', sans-serif;
-  
+  margin: 0;
 }
 
 h1 {
@@ -58,34 +58,29 @@ h1 {
   overflow: auto;
 }
 
-/* Sidebar links */
 .sidebar a {
   display: block;
   color: black;
   padding: 16px;
   text-decoration: none;
 }
-
-/* Active/current link */
+ 
 .sidebar a.active {
-  background-color: dodgerblue;
+  background-color: #1f8fff;
   color: white;
 }
 
-/* Links on mouse-over */
 .sidebar a:hover:not(.active) {
   background-color: #555;
   color: white;
 }
 
-/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
-div.cabinet {
+div.content {
   margin-left: 200px;
   padding: 1px 16px;
   height: 1000px;
 }
 
-/* On screens that are less than 700px wide, make the sidebar into a topbar */
 @media screen and (max-width: 700px) {
   .sidebar {
     width: 100%;
@@ -93,10 +88,9 @@ div.cabinet {
     position: relative;
   }
   .sidebar a {float: left;}
-  div.cabinet {margin-left: 0;}
+  div.content {margin-left: 0;}
 }
 
-/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
 @media screen and (max-width: 400px) {
   .sidebar a {
     text-align: center;
@@ -116,6 +110,25 @@ div.cabinet {
     padding: 20px;
     font-size: 30px;
     text-align: center;
+  }
+
+  .content {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .main-section {
+    flex-basis: 70%;
+    background-color: #F2F4F8;
+    height: 100%;
+    display: table;
+  }
+  
+  .side-section {
+    flex-basis: 30%;
+    background-color: #F2F4F8;
+    display: table;
+    color: black;
   }
 
 
@@ -177,8 +190,41 @@ div.cabinet {
     }
   }
 
-  /* TITLE OF LANDING PAGE */
+/* FORM */
 
+/* Style inputs */
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=date], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+/* Style the submit button */
+input[type=submit] {
+  width: 100%;
+  background-color: dodgerblue;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
 
 
   /* MAIN BUTTON */
