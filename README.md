@@ -3,6 +3,8 @@
 
 SOEN 357 final project. 
 
+Video demo can be found [here](https://youtu.be/7K1Djd3QKAI).
+
 GlowUP is a web based application meant to help its users manage their consumption of beauty products. With a digital cabinet, users can track what makeup and skincare they have, when they should buy more and get recommendations based on short surveys. They also have the option of adding friends to their network, allowing them to suggest products to another based on real human experience. 
 
 
