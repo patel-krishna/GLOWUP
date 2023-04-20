@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="main.css" />
+        <!-- <link rel="stylesheet" type="text/css" href="cabinet.css" /> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        .autocomplete {
+            position: relative;
+            display: inline-block;
+            }
+
+            input[type=submit] {
+                background-color: DodgerBlue;
+                color: #fff;
+                cursor: pointer;
+                max-width: fit-content;
+                margin-left:10px;
+            }
+
+            .friend-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+            margin: 10px;
+            }
+
+            .card {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+            padding: 20px;
+            text-align: center;
+            }
+    </style>
+    
+    
+    </head>
+<body>
+
+
+    <div class="sidebar">
+    <a href="home.html" class="logo">GlowUp</a>
+        <a href="cabinet.php">Your Cabinet</a>
+        <a class="active" href="friends.html">Your Friends</a>
+        <a href="surveys.html">Surveys</a>
+    </div>
+
+
+
+
+<div class="content">
+
+    <div class="main-section">
+        <h1>Your Friends</h1>
+
+        <form autocomplete="off" action="#">
+            <div style="display:flex;">
+              <div class="autocomplete" style="width:300px;">
+                <input id="search" type="text" name="search" placeholder="Search your friends">
+              </div>
+              <input type="submit">
+            </div>
+          </form>
+        
+        <div class="friend-list">
+            <div class="card">
+                <h3>Friend 1</h3>
+                <img src="resources/images/girl.png">
+                <button class="button-47">View Cabinet</button>
+            </div>
+            <div class="card">
+                <h3>Friend 2</h3>
+                <img src="resources/images/man.png">
+                <button class="button-47">View Cabinet</button>
+            </div>
+            <div class="card">
+                <h3>Friend 3</h3>
+                <img src="resources/images/girl2.png">
+                <button class="button-47">View Cabinet</button>
+            </div>
+        </div>
+        
+    </div>
+    
+    <div class="side-section">
+        <h3>Notifications<h3>
+    </div>
+</div>
+
+
+<script src="main.js"></script>
+</body>
+</html>

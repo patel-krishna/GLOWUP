@@ -33,7 +33,7 @@
     <div class="sidebar">
     <a href="home.html" class="logo">GlowUp</a>
         <a class="active" href="cabinet.php">Your Cabinet</a>
-        <a href="#">Your Friends</a>
+        <a href="friends.html">Your Friends</a>
         <a href="surveys.html">Surveys</a>
     </div>
 
