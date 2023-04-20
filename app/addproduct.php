@@ -4,7 +4,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="main.css" />
+        <link rel="stylesheet" type="text/css" href="../style/main.css" />
 
       <style>
         .content{
@@ -22,7 +22,7 @@
 <div class="sidebar">
     <a href="home.html" class="logo">GlowUp</a>
         <a class="active" href="cabinet.php">Your Cabinet</a>
-        <a href="#">Your Friends</a>
+        <a href="friends.html">Your Friends</a>
         <a href="surveys.html">Surveys</a>
 </div>
 

@@ -1,4 +1,6 @@
 
+/* OLD---NOT USED */
+
 table{
     background-color: yellow;
 }
@@ -6,12 +8,7 @@ table{
 td{
     height: fit-content;
 }
-  
- 
-  
 
- 
-  
   .navbar ul li {
     list-style: none;
     display: inline-block;

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <cabinet>
-  <next>6</next>
+  <next>7</next>
   <product>
     <id>1</id>
     <name>BHA</name>
@@ -8,7 +8,7 @@
     <category>Skincare</category>
     <type>Exfoliator</type>
     <date>2023-04-04</date>
-    <image>resources/images/exfoliator.png</image>
+    <image>../resources/images/exfoliator.png</image>
   </product>
   <product>
     <id>2</id>
@@ -17,7 +17,7 @@
     <category>Makeup</category>
     <type>Blush</type>
     <date>2023-01-25</date>
-    <image>resources/images/blush.png</image>
+    <image>../resources/images/blush.png</image>
   </product>
   <product>
     <id>3</id>
@@ -26,7 +26,7 @@
     <category>Makeup</category>
     <type>Powder</type>
     <date>2023-04-10</date>
-    <image>resources/images/powder.png</image>
+    <image>../resources/images/powder.png</image>
   </product>
   <product>
     <id>4</id>
@@ -35,7 +35,7 @@
     <category>Skincare</category>
     <type>Cleanser</type>
     <date>2023-03-08</date>
-    <image>resources/images/cleanser.png</image>
+    <image>../resources/images/cleanser.png</image>
   </product>
   <product>
     <id>5</id>
@@ -44,7 +44,16 @@
     <category>Makeup</category>
     <type>Highlighter</type>
     <date>2023-03-15</date>
-    <image>resources/images/highlighter.png</image>
+    <image>../resources/images/highlighter.png</image>
+  </product>
+  <product>
+    <id>6</id>
+    <name>Natural Perfection Fresh Sun Stick</name>
+    <brand>AHC</brand>
+    <category>Skincare</category>
+    <type>Sunscreen</type>
+    <date>2023-04-01</date>
+    <image>../resources/images/sunscreen.png</image>
   </product>
 </cabinet>
 <!-- Product template -->

@@ -5,7 +5,7 @@ if(isset($_POST['submit']))
     $xml = new DOMDocument('1.0', "UTF-8");
     $xml->preserveWhiteSpace = false;
     $xml->formatOutput = true;
-    $xml->load("resources/products.xml");
+    $xml->load("../resources/products.xml");
 
     $id = $xml -> getElementsByTagName("next")->item(0)->textContent; 
     $name = $_POST['prodname'];
@@ -51,58 +51,58 @@ if(isset($_POST['submit']))
     // images
     switch($type){
         case 'Cleanser':
-            $image = "resources/images/cleanser.png";
+            $image = "../resources/images/cleanser.png";
             break;
         case 'Toner':
-            $image = "resources/images/toner.png";
+            $image = "../resources/images/toner.png";
             break;
         case 'Serum':
-            $image = "resources/images/serum.png";
+            $image = "../resources/images/serum.png";
             break;
         case 'Moisturizer':
-            $image = "resources/images/moisturizer.png";
+            $image = "../resources/images/moisturizer.png";
             break;
         case 'Eye Cream':
-            $image = "resources/images/eyecream.png";
+            $image = "../resources/images/eyecream.png";
             break;
         case 'Sunscreen':
-            $image = "resources/images/sunscreen.png";
+            $image = "../resources/images/sunscreen.png";
             break;
         case 'Face Oil':
-            $image = "resources/images/faceoil.png";
+            $image = "../resources/images/faceoil.png";
             break;
         case 'Exfoliator':
-            $image = "resources/images/exfoliator.png";
+            $image = "../resources/images/exfoliator.png";
             break;
         case 'Mask':
-            $image = "resources/images/mask.png";
+            $image = "../resources/images/mask.png";
             break;
         case 'Lip Mask':
-            $image = "resources/images/lipmask.png";
+            $image = "../resources/images/lipmask.png";
             break;
         case 'Foundation':
-            $image = "resources/images/foundation.png";
+            $image = "../resources/images/foundation.png";
             break;
         case 'Concealer':
-            $image = "resources/images/concealer.png";
+            $image = "../resources/images/concealer.png";
             break;
         case 'Powder':
-            $image = "resources/images/powder.png";
+            $image = "../resources/images/powder.png";
             break;
         case 'Blush':
-            $image = "resources/images/blush.png";
+            $image = "../resources/images/blush.png";
             break;
         case 'Highlighter':
-            $image = "resources/images/highlighter.png";
+            $image = "../resources/images/highlighter.png";
             break;
         case 'Eyeshadow':
-            $image = "resources/images/eyeshadow.png";
+            $image = "../resources/images/eyeshadow.png";
             break;
         case 'Mascara':
-            $image = "resources/images/mascara.png";
+            $image = "../resources/images/mascara.png";
             break;
         case 'Lipstick':
-            $image = "resources/images/lipstick.png";
+            $image = "../resources/images/lipstick.png";
             break;
     }
 
@@ -136,7 +136,7 @@ if(isset($_POST['submit']))
     $cabinet->appendChild($product);
 
     // Save the changes to the XML file
-    $xml->save("resources/products.xml") or die("Error, unable to create xml file.");
+    $xml->save("../resources/products.xml") or die("Error, unable to create xml file.");
     header("Location: cabinet.php");
 } 
 ?>
