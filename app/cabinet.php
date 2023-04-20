@@ -42,9 +42,6 @@
 
 <div class="content">
 
-       
-
-
     <div class="main-section">
         <h1>Your Cabinet</h1>
         <a href="addproduct.php"><button class="button-47">Add Product</button></a>

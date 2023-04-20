@@ -29,7 +29,7 @@ Go to the project directory
 Run on local Apache server (I recommend using MAMP or XAMPP). Replace port number by port setting on your machine. 
 
 ```bash
-  http://localhost:8888/my-project/GLOWUP/home.html
+  http://localhost:8888/my-project/GLOWUP/app/home.html
 ```
 
 
