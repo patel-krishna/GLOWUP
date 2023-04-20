@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="main.css" />
+        <!-- <link rel="stylesheet" type="text/css" href="cabinet.css" /> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+
+        <style>
+           
+            input[type=text], select, textarea {
+              width: 100%;
+              padding: 12px;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+              box-sizing: border-box;
+              margin-top: 6px;
+              margin-bottom: 16px;
+              resize: vertical;
+            }
+            
+            input[type=submit] {
+              background-color: dodgerblue;
+              color: white;
+              padding: 12px 20px;
+              border: none;
+              border-radius: 4px;
+              cursor: pointer;
+            }
+            
+            input[type=submit]:hover {
+              background-color: dodgerblue;
+            }
+            
+            .container {
+              border-radius: 5px;
+              background-color: #f2f2f2;
+              padding: 20px;
+            }
+
+            .hidden {
+                display: none;
+                }
+            </style>
+
+
+
+    </head>
+<body>
+
+
+    <div class="sidebar">
+    <a href="home.html" class="logo">GlowUp</a>
+        <a href="cabinet.php">Your Cabinet</a>
+        <a href="#">Your Friends</a>
+        <a class="active" href="surveys.html">Surveys</a>
+    </div>
+
+
+
+
+<div class="content">
+
+       
+
+
+    <div class="main-section">
+        <h1>Recommendation Survey</h1>
+        
+        <form action="">
+
+            <label for="recommendation-area">Select which area do you need recommendations from:</label>
+            <select id="recommendation-area" name="recommendation-area" placeholder="Select">
+              <option>Makeup</option>
+              <option>Skincare</option>
+              <option>Both</option>
+            </select>
+
+            <div class="skincare-questions hidden">
+                <h2>Skincare Product Recommendation</h2>
+                <label for="skin-feel">How is your skin feeling today?</label>
+                <select id="skin-feel" name="skin-feel">
+                  <option value="oily">Oily</option>
+                  <option value="dry">Dry</option>
+                  <option value="combination">Combination</option>
+                  <option value="normal">Normal</option>
+                </select>
+                <br>
+                
+                <label for="skin-concern">What is your main skin concern today?</label>
+            <select id="skin-concern" name="skin-concern">
+                <option value="acne">New acne flair up</option>
+                <option value="wrinkles">More noticeable wrinkles/fine lines</option>
+                <option value="dark-spots">Dark spots/hyperpigmentation</option>
+                <option value="dryness">Dryness/flakiness</option>
+                <option value="redness">Redness/sensitivity</option>
+                <option value="none">None of the above</option>
+            </select>
+            <br>
+
+            <label for="allergic-reaction">Have you experienced an allergic reaction/sensitivity to any of the products from your collection?</label>
+            <select id="allergic-reaction" name="allergic-reaction">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+            <br>
+
+            <label for="specific-products">Do you have any specific products you want to use today? Select how many apply.</label>
+            <select id="specific-products" name="specific-products" multiple>
+                <option value="cleanser">Cleanser</option>
+                <option value="toner">Toner</option>
+                <option value="serum">Serum</option>
+                <option value="moisturizer">Moisturizer</option>
+                <option value="eye-cream">Eye cream</option>
+                <option value="sunscreen">Sunscreen</option>
+                <option value="face-oil">Face oil</option>
+                <option value="exfoliator">Exfoliator</option>
+                <option value="none">None of the above</option>
+            </select>
+            <br>
+
+            <label for="increase-sunscreen">Do you want to increase the amount of sunscreen you use?</label>
+            <select id="increase-sunscreen" name="increase-sunscreen">
+                <option value="no-use-everyday">No, I use it every day already</option>
+                <option value="yes">Yes</option>
+                <option value="no-doesnt-matter">No, it doesn’t matter to me</option>
+            </select>
+            <br>
+
+            <label for="skincare-time">How much time do you want to spend on your skincare routine?</label>
+            <select id="skincare-time" name="skincare-time">
+                <option value="less-than-5">Less than 5 minutes</option>
+                <option value="5-to-10">5 to 10 minutes</option>
+                <option value="10-to-15">10 to 15 minutes</option>
+                <option value="more-than-15">More than 15 minutes</option>
+            </select>
+            <br>
+
+            <label for="incorporate-new-products">Do you want to try and incorporate any of your new products in your routine?</label>
+            <select id="incorporate-new-products" name="incorporate-new-products">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+            <br>
+            </div>
+
+            <div class="makeup-questions hidden">
+            <h2>Makeup Product Recommendation</h2>
+            <label for="skincare-feeling">How is your skincare feeling today?</label>
+            <select id="skincare-feeling" name="skincare-feeling">
+              <option value="oily">Oily</option>
+              <option value="dry">Dry</option>
+              <option value="combination">Combination</option>
+              <option value="normal">Normal</option>
+            </select>
+            
+            <label for="skin-tone">What is your skin tone as of late?</label>
+            <select id="skin-tone" name="skin-tone">
+              <option value="fair">More on the fair side</option>
+              <option value="neutral">More on the neutral side</option>
+              <option value="tan">More on the tan side</option>
+            </select>
+            
+            <label for="main-concern">What is your main concern for your look today?</label>
+            <select id="main-concern" name="main-concern">
+              <option value="coverage">Coverage</option>
+              <option value="longevity">Longevity</option>
+              <option value="color-payoff">Colour payoff</option>
+              <option value="texture-finish">Texture/finish</option>
+              <option value="none">None of the above</option>
+            </select>
+            
+            <label for="coverage-preference">What kind of coverage do you prefer today?</label>
+            <select id="coverage-preference" name="coverage-preference">
+              <option value="matte">Matte</option>
+              <option value="dewy">Dewy</option>
+              <option value="natural">Natural</option>
+              <option value="shimmery">Shimmery</option>
+              <option value="randomize">Don’t know - randomize</option>
+            </select>
+            
+            <label for="incorporate-new-products">Do you want to incorporate any new products of your collection to your look?</label>
+            <select id="incorporate-new-products" name="incorporate-new-products">
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+            
+            <label for="makeup-products">Which of the following do you want to use in today's look? Select how many apply.</label>
+            <select id="makeup-products" name="makeup-products" multiple>
+              <option value="foundation">Foundation</option>
+              <option value="concealer">Concealer</option>
+              <option value="powder">Powder</option>
+              <option value="blush">Blush</option>
+              <option value="highlighter">Highlighter</option>
+              <option value="eyeshadow">Eyeshadow</option>
+              <option value="mascara">Mascara</option>
+              <option value="lipstick">Lipstick/lipgloss</option>
+              <option value="none">None of the above</option>
+            </select>
+            
+            <label for="complexity">How complex do you want your look to be today?</label>
+            <select id="complexity" name="complexity">
+              <option value="simple">Simple - minimal amount of products</option>
+              <option value="moderate">Moderate</option>
+              <option value="intricate">Intricate</option>
+              <option value="expert">Expert - aspiring makeup artist level</option>
+            </select>
+            </div>
+            
+            <input type="submit" value="Submit">
+          </form>
+    </div>
+    
+    <div class="side-section">
+        <h3><h3>
+    </div>
+
+</div>
+
+<script>
+    const selectElem = document.getElementById("recommendation-area");
+    const skincareQuestions = document.querySelector(".skincare-questions");
+    const makeupQuestions = document.querySelector(".makeup-questions");
+    
+    selectElem.addEventListener("change", function() {
+      if (this.value === "Skincare") {
+        skincareQuestions.classList.remove("hidden");
+        makeupQuestions.classList.add("hidden");
+      } else if (this.value === "Makeup") {
+        skincareQuestions.classList.add("hidden");
+        makeupQuestions.classList.remove("hidden");
+      } else {
+        skincareQuestions.classList.remove("hidden");
+        makeupQuestions.classList.remove("hidden");
+      }
+    });
+  </script>
+
+</body>
+</html>
